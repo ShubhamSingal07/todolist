@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="google-site-verification" content="qzqMw6vlSfLoODcqISXqL0QBYsVlCKB5ZTaHRNJT4IY" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/todolist.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/todolist.css" />
     <script src="js/jquery-3.3.1.slim.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/vanilla-js.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="text-center my-4">ToDoList</h1>
     <div class="container">
-        <div class="row">
-            <input placeholder="Enter a new task" id="inptask" class="form-control mx-2 col">
-            <button class="btn btn-success mx-2 col-1" id="addbtn">Add Task</button>
-            <button class="btn btn-primary mx-2 col-1" id="clrbtn">Clear</button>
-            <button class="btn btn-warning mx-2 col-1" id="sortbtn">Sort</button>
+      <div class="row">
+        <input placeholder="Enter a new task" id="inptask" class="form-control mx-2 col" />
+        <button class="btn btn-success mx-2 col-1" id="addbtn">Add Task</button>
+        <button class="btn btn-primary mx-2 col-1" id="clrbtn">Clear</button>
+        <button class="btn btn-warning mx-2 col-1" id="sortbtn">Sort</button>
+      </div>
+      <div class="row my-2 col">
+        <div class="col">
+          <ul class="list-group" id="tasklist">
+            <li class="list-group-item">
+              <div class="row">
+                <span class="col">First task</span>
+                <button class="btn btn-success col-1 mx-2">Done</button>
+                <button class="btn btn-danger col-1 mx-2">Delete</button>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="row my-2 col">
-            <div class="col">
-                    <ul class="list-group" id="tasklist">
-                            <li class="list-group-item">
-                                <div class="row">
-                                    <span class="col">First task</span>
-                                    <button class="btn btn-success col-1 mx-2">Done</button>
-                                    <button class="btn btn-danger col-1 mx-2">Delete</button>
-                                </div>
-                            </li>
-                        </ul>
-            </div>
-            
-        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
